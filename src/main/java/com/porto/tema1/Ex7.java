@@ -1,6 +1,5 @@
 package com.porto.tema1;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Ex7 {
