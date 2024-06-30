@@ -1,34 +1,23 @@
 ### Artigo 1: Introdução aos Java Streams
 
 #### Objetivo
-
 Apresentar o conceito de Streams em Java, seus benefícios e compará-los com outras formas de processamento de dados.
 
 ---
 
 #### O que são Streams?
 
-Streams, introduzidos no Java 8, são uma abstração que permite o processamento de sequências de elementos de maneira
-declarativa. Eles facilitam operações como filtragem, mapeamento e redução de coleções de forma concisa e legível.
+Streams, introduzidos no Java 8, são uma abstração que permite o processamento de sequências de elementos de maneira declarativa. Eles facilitam operações como filtragem, mapeamento e redução de coleções de forma concisa e legível.
 
-Um Stream não armazena dados, mas é focado em realizar operações sobre os dados que fluem através dele. Ele é similar a
-um pipeline, onde os dados passam por uma série de operações intermediárias e terminam com uma operação terminal.
+Um Stream não armazena dados, mas é focado em realizar operações sobre os dados que fluem através dele. Ele é similar a um pipeline, onde os dados passam por uma série de operações intermediárias e terminam com uma operação terminal.
 
 ```java
 List<String> nomes = Arrays.asList("Ana", "Bruno", "Carlos", "Daniela");
 
 // Uso básico de um Stream
-nomes.
-
-stream()
-    .
-
-filter(nome ->nome.
-
-startsWith("A"))
-        .
-
-forEach(System.out::println);
+nomes.stream()
+    .filter(nome -> nome.startsWith("A"))
+    .forEach(System.out::println);
 ```
 
 ---
@@ -54,8 +43,7 @@ forEach(System.out::println);
    ```
 
 2. **Paralelismo Simplificado:**
-    - Streams permitem fácil paralelização com o método `parallelStream()`, aproveitando múltiplos núcleos do
-      processador para melhorar a performance em operações grandes.
+    - Streams permitem fácil paralelização com o método `parallelStream()`, aproveitando múltiplos núcleos do processador para melhorar a performance em operações grandes.
 
    ```java
    nomes.parallelStream()
@@ -68,8 +56,7 @@ forEach(System.out::println);
     - Operações intermediárias como `filter`, `map`, e `flatMap` permitem transformar e manipular dados eficientemente.
 
 4. **Lazy Evaluation:**
-    - Streams são avaliados de forma preguiçosa. As operações intermediárias são acumuladas e só executadas quando uma
-      operação terminal é invocada, otimizando a performance.
+    - Streams são avaliados de forma preguiçosa. As operações intermediárias são acumuladas e só executadas quando uma operação terminal é invocada, otimizando a performance.
 
    ```java
    nomes.stream()
@@ -127,12 +114,9 @@ forEach(System.out::println);
 
 ### Conclusão
 
-Java Streams representam uma poderosa ferramenta para processamento de dados de forma eficiente e legível. Eles oferecem
-uma abordagem declarativa que simplifica a escrita e manutenção do código, além de permitir paralelização e otimizações
-automáticas.
+Java Streams representam uma poderosa ferramenta para processamento de dados de forma eficiente e legível. Eles oferecem uma abordagem declarativa que simplifica a escrita e manutenção do código, além de permitir paralelização e otimizações automáticas.
 
-Nos próximos artigos, exploraremos em mais detalhes como criar e usar Streams, operações intermediárias e terminais, e
-muitos outros aspectos dessa funcionalidade tão útil do Java.
+Nos próximos artigos, exploraremos em mais detalhes como criar e usar Streams, operações intermediárias e terminais, e muitos outros aspectos dessa funcionalidade tão útil do Java.
 
 ---
 
